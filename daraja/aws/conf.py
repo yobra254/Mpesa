@@ -1,9 +1,9 @@
 import datetime
 
-from decouple import config
+# from decouple import config
 
-AWS_ACCESS_KEY_ID = config("AKIAUK435S7VODW7OC5O")
-AWS_SECRET_ACCESS_KEY = config("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")
+AWS_ACCESS_KEY_ID = "AKIAUK435S7VODW7OC5O"
+AWS_SECRET_ACCESS_KEY = "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"
 
 AWS_FILE_EXPIRE = 200
 AWS_PRELOAD_METADATA = True
@@ -13,7 +13,7 @@ DEFAULT_FILE_STORAGE = "daraja.aws.utils.MediaRootS3BotoStorage"
 STATICFILES_STORAGE = "daraja.aws.utils.StaticRootS3BotoStorage"
 
 
-AWS_STORAGE_BUCKET_NAME = config("darajapi")
+AWS_STORAGE_BUCKET_NAME = "darajapi"
 S3DIRECT_REGION = "us-east-1"
 
 S3_URL = "//%s.s3.amazonaws.com/" % AWS_STORAGE_BUCKET_NAME
